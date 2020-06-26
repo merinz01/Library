@@ -1,0 +1,106 @@
+    body {
+    background: url(../images/index.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .collapse ul li a{
+    border: .5px solid transparent;
+    padding: 5px;
+    margin-right: 8px; 
+}
+.collapse ul li a:hover{
+    background-color: rgb(161, 167, 161);
+    transition: 0.5 ease-in-out;
+} 
+  
+  .content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 40px auto;
+    background: rgba(22,22,22, 0.5);
+    width: 100%;
+    max-width: 960px;
+    border-radius: 5px;
+    padding-bottom: 32px;
+    margin-top: 80px;
+  }
+  .main-section{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+  }
+  .modal-content{
+    background-color:  rgba(59, 60, 68, 0.5);
+    opacity: 0.95;
+    padding: 0 18px;
+    box-shadow:0px 5px 10px rgb(138, 135, 135);
+    width: 400px;
+    margin-top: 30px;
+  
+  }
+  .user-img{
+    margin-top:-125px ;
+    margin-bottom: 25px;
+    border: none;
+  }
+  .user-img img{
+    height:200px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow:none;
+  
+  }
+  .login-form{
+    max-width: 100%;
+    width: 370px;
+    padding: 15px;
+    margin: auto;
+    height: 400px;
+    
+    }
+  .form-control{
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+    background :rgb(138, 135, 135);
+  }
+  .form-control:focus{
+    border-color: rgb(161, 163, 161);
+    box-shadow:0 0 0 0.2rem rgba(54, 61, 53, 0.979) ;
+  }
+  .forgot-link{
+    font-size: 13px;
+  }
+  .forgot-link label{
+    margin-bottom: 0;
+  }
+  .login-form a{
+    text-decoration: none;
+    color: #666;
+  }
+  .login-form a :hover{
+     color:  #2a53da; 
+  }
+  .btn-custom{
+    background :rgb(138, 135, 135); 
+    border-color:#54229d;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+  }
+  .btn-custom:focus,
+  .btn-custom:hover,
+  .btn-custom:active,
+  .btn-custom:active:focus{
+     background:rgb(64, 83, 250);
+     border-color:#96b2e6;
+     color: #fff;
+  }
+  .btn-custom:focus{
+    box-shadow:0 0 0 0.2rem rgba(114, 61, 190, 0.25) ;
+  }

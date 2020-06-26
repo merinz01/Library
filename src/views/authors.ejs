@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/authorstyle.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-default"style="background-color:rgb(2, 31, 105)" font-color="white ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/icon1.jpg" width="30" height="30" alt="" class="d-inline-block align-top" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+  
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 ">
+              <%for(i=0;i<nav.length;i++){%>
+                <li class="nav-item"style="font-size:1vw">
+                  <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+              &nbsp&nbsp&nbsp
+              <%}%>      
+            </ul>
+            <div class="ml-auto">
+                <a class="btn btn-primary btn-sm" type="submit" href="<%=logout[0].link%>" style="background-color:rgb(8, 67, 218);width: 80px;"><%=logout[0].name%></a>
+             </div>
+            </div>
+          </div>
+         </nav>
+
+<div class="content">
+
+  <section >
+        <div class="container text-center" style="width: 1500px;height:925px; margin-top: 5%;">
+          <div class="row" style="padding-top: 70px;">
+          <%for(i=0;i<authors.length;i++){%>
+            <div class="col-md-3 col-sm-6 equal-height" style="margin-bottom: 100px;" >
+              <div class="card" style="height: 400px;">
+                <div class="inner" >
+                  <img src="/images/<%=authors[i].image%>" class="card-img-top" style="height: 325px;" alt="..."><br>
+              </div> 
+              <div class="card-text"style="height: 95px;">
+                <h5 class="text" style=" font-size:xx-medium;color: rgb(5, 5, 48);"><%=authors[i].author%></h5><br>
+                <a href="/authors/<%=authors[i]._id%>" style="float: right;color: rgb(150, 142, 142);">Know more...</a>
+               </div>
+            </div>
+          </div>
+        <%}%>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+    <!-- footer starts here -->
+    <footer class="py-2 text-white-100"  style="background-color:rgb(2, 31, 105);border-top:10px solid rgb(41, 41, 243) ; margin-top: 30px;">
+      <div class="container text-center">
+        <p style="color: aqua;">Copyright 2020 &copy; Central Library Kollam  All Rights Reserved</p>
+      </div>
+    </footer>
+       
+ <script src="js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="content">
+        <!-- <img src="./images/icon1.jpg" alt="" style="align-items: center;"> -->
+        <h1>The Reader's Planet</h1>
+        <p>"The only thing that you absolutely have to know is the location of the library"</p>
+        <p>-Albert Einstein</p>
+
+        <%for(i=0;i<btn.length;i++){%>
+        <a href="<%=btn[i].link%>" class="button" target="_blank"><%=btn[i].name%></a>
+        <!-- <a href="" class="button" target="_blank">Sign Up</a> -->
+        <%}%>
+    </div>
+ 
+ </body>
+</html>
